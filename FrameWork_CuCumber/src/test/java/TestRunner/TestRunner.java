@@ -7,10 +7,10 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"C:\\Users\\admin\\eclipse-workspace\\FrameWork_CuCumber\\src\\test\\resources\\FeatureFiles\\Registration.feature"},
+        features = {"C:\\Users\\admin\\git\\FreamWork_Cucumber\\FrameWork_CuCumber\\src\\test\\resources\\FeatureFiles\\Login.feature"},
         glue = "StepDefinition",
         monochrome = true,
-        plugin = "pretty"
+        plugin  ="pretty"
         
         
 )

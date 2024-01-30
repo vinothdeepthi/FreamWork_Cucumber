@@ -12,7 +12,7 @@ import io.cucumber.java.en.When;
 
 public class LoginFunction extends CommonUtils {
 	
- private LoginPage log;
+    private LoginPage log = new LoginPage(driver);
 	
 	@Given("User As Navigate To Login Page")
 	public void user_as_navigate_to_login_page() {
@@ -26,8 +26,6 @@ public class LoginFunction extends CommonUtils {
 	}
 	@When("User Enter Valid User Name {string} into the User Name Field")
 	public void user_enter_valid_user_name_into_the_user_name_field(String validusername) throws InterruptedException {
-	   
-		 log = new LoginPage(driver);
 		 
 		 log.EnterloginEmail(validusername);
 	}
@@ -51,7 +49,7 @@ public class LoginFunction extends CommonUtils {
 	@When("User Enter inValid User Name {string} into the User Name Field")
 	public void user_enter_invalid_user_name_into_the_user_name_field(String invalidusername) throws InterruptedException {
 		
-		//log.EnterloginEmail(invalidusername);
+		log.EnterloginEmail(invalidusername);
 	}
 	
 	@And("User Enter inValid Password {string} into the password Field")

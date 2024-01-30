@@ -4,7 +4,7 @@ Scenario: User Create An Account With Only Manditory Field
 Given User Naviage To The Registration Registration Page
 When User Entring The Details With Below The Field
 | FirstName | priyanka   |
-| LastName  | c       |
+| LastName  | c          |
 |phone      | 8489889583 |
 |Password   | vinothbe236 |
 |confirmPassword | vinothbe236 |

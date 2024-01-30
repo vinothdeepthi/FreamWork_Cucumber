@@ -40,7 +40,7 @@ public class Hooks extends CommonUtils {
 	@After
 	public void TearDown() {  
 		
-        //driver.quit();
+        driver.quit();
 	}
 	
 

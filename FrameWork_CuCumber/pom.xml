@@ -59,17 +59,18 @@
     <version>7.10.1</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-junit</artifactId>
-    <version>7.10.1</version>
-    <scope>test</scope>
-</dependency>
+
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-core</artifactId>
     <version>7.10.1</version>
+</dependency>
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>7.3.1</version>
+    <scope>test</scope>
 </dependency>
 
 <dependency>
@@ -84,6 +85,11 @@
           <version>7.10.1</version>
         </dependency>
 
+        <dependency>
+        	<groupId>Cucumber_Project</groupId>
+        	<artifactId>Cucumber_Project</artifactId>
+        	<version>0.0.1-SNAPSHOT</version>
+        </dependency>
   </dependencies>
   <build>
     <plugins>

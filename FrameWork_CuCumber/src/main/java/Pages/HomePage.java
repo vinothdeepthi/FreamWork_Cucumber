@@ -23,11 +23,11 @@ public class HomePage {
 	@FindBy(xpath = "(//a[text()='Login'])[1]")
 	private WebElement LoginLink;
 	
-	@FindBy(name = "search")
-	private WebElement Search;
+	@FindBy(xpath = "(//input[@name='search'])[1]")
+	private WebElement SearchTextField;
 	
 	@FindBy(xpath = "//button[@class='btn btn-default btn-lg']")
-	private WebElement Searchicon;
+	private WebElement SearchButton;
 	
 	
     public HomePage(WebDriver driver) {
@@ -56,17 +56,15 @@ public class HomePage {
     	element.ClickOnElement(LoginLink, CommonUtils.Explecityywait);
     	
     }
-    
-     public void SearchProduct() {
-    	
-    	 element.ClickOnElement(Searchicon, CommonUtils.Explecityywait);
-    
-    }
      
-     public void EnterProduct(String product) {
-     	
-    	 element.TypeTextIntoElement(Search, product, CommonUtils.Explecityywait);
-     	
+     public void EnteringTheProduct(String product) {
+    	 
+    	 element.TypeTextIntoElement(SearchTextField, product, CommonUtils.Explecityywait);
+     }
+     
+     public void ClickSearchButton() {
+    	 
+    	 element.ClickOnElement(SearchButton, CommonUtils.Explecityywait);
      }
 	
 
