@@ -72,7 +72,6 @@
     <version>7.3.1</version>
     <scope>test</scope>
 </dependency>
-
 <dependency>
    <groupId>tech.grasshopper</groupId>
    <artifactId>extentreports-cucumber6-adapter</artifactId>
@@ -83,12 +82,6 @@
          <groupId>io.cucumber</groupId>
           <artifactId>cucumber-testng</artifactId>
           <version>7.10.1</version>
-        </dependency>
-
-        <dependency>
-        	<groupId>Cucumber_Project</groupId>
-        	<artifactId>Cucumber_Project</artifactId>
-        	<version>0.0.1-SNAPSHOT</version>
         </dependency>
   </dependencies>
   <build>
