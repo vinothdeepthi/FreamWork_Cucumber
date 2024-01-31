@@ -7,9 +7,11 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"C:\\Users\\admin\\git\\FreamWork_Cucumber\\FrameWork_CuCumber\\src\\test\\resources\\FeatureFiles\\Login.feature"},
+        features = {"C:\\Users\\admin\\git\\FreamWork_Cucumber\\FrameWork_CuCumber\\src\\test\\resources\\FeatureFiles"},
+        dryRun = !true,
         glue = "StepDefinition",
         monochrome = true,
+        tags = "@Smoke",
         plugin  ="pretty"
         
         

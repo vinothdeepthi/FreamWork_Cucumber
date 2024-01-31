@@ -1,5 +1,6 @@
 Feature: Search Product Fuctionality
 
+@Smoke
 Scenario: User Able To Search The Valid Product
 
 Given User navigate To The dashBoad Page

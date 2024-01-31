@@ -1,5 +1,6 @@
 Feature: Login Fuctionality
 
+@Smoke
 Scenario: Login With Valid Credentials
 
 Given User As Navigate To Login Page
