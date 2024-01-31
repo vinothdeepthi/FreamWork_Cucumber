@@ -29,6 +29,32 @@ public class HomePage {
 	@FindBy(xpath = "//button[@class='btn btn-default btn-lg']")
 	private WebElement SearchButton;
 	
+	@FindBy(xpath = "//a[text()='Desktops']")
+	private WebElement Desktop;
+	
+	@FindBy(xpath = "//a[text()='Mac (1)']")
+	private WebElement DeskTopCategory;
+	
+	@FindBy(xpath = "//a[text()='Laptops & Notebooks']")
+	private WebElement Laptop;
+	
+	@FindBy(xpath = "//a[text()='Show AllLaptops & Notebooks']")
+	private WebElement LaptopCategory;
+	
+	@FindBy(xpath = "//a[text()='Components']")
+	private WebElement Components;
+	
+	@FindBy(xpath = "//a[text()='Monitors (2)']")
+	private WebElement ComponentsCategory;
+	
+	@FindBy(xpath = "//a[text()='Tablets']")
+	private WebElement Tab;
+	
+	
+	
+	
+	
+	
 	
     public HomePage(WebDriver driver) {
 		
@@ -66,6 +92,46 @@ public class HomePage {
     	 
     	 element.ClickOnElement(SearchButton, CommonUtils.Explecityywait);
      }
+     
+     public void MoveToDeskTop() {
+    	 
+    	 element.MouseOverAndClick(Desktop, CommonUtils.Explecityywait);
+     }
+     
+     public void ClickDeskTopCategory() {
+    	 
+    	 element.MouseOverAndClick(DeskTopCategory, CommonUtils.Explecityywait);
+     }
+     
+ public void MoveToLaptop() {
+    	 
+    	 element.MouseOverAndClick(Laptop, CommonUtils.Explecityywait);
+     }
+     
+     public void ClickLaptopCategory() {
+    	 
+    	 element.MouseOverAndClick(LaptopCategory, CommonUtils.Explecityywait);
+     }
+     
+     public void MoveToComponents() {
+    	 
+    	 element.MouseOverAndClick(Components, CommonUtils.Explecityywait);
+     }
+     
+     public void ClickComponentsCategory() {
+    	 
+    	 element.MouseOverAndClick(ComponentsCategory, CommonUtils.Explecityywait);
+     }
+     
+     public void ClickTab() {
+    	 
+    	 element.MouseOverAndClick(Tab, CommonUtils.Explecityywait);
+     }
+     
+     
+     
+     
+     
 	
 
 }

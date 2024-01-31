@@ -1,14 +1,15 @@
 Feature: Registration Fuctionality
 
+@Smoke
 Scenario: User Create An Account With Only Manditory Field
 Given User Naviage To The Registration Registration Page
 When User Entring The Details With Below The Field
-| FirstName | priyanka   |
+| FirstName | priyankakumar   |
 | LastName  | c          |
-|phone      | 8489889583 |
-|Password   | vinothbe236 |
-|confirmPassword | vinothbe236 |
-|Email      | sam8909@gmail.com |
+|phone      | 8489889582 |
+|Password   | vinothbe2361 |
+|confirmPassword | vinothbe2361 |
+|Email      | sam33@gmail.com |
 And User Select Privacy and Policy
 And User Click On Contine button
 Then User Account Should Be Create Succssfully

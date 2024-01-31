@@ -17,7 +17,7 @@ public class CommonUtils extends Configration{
 
 	public static final int implecitywait=15;
 	
-	public static final int Explecityywait=30;
+	public static final int Explecityywait=40;
 	
 	
 	protected static WebDriver driver;
